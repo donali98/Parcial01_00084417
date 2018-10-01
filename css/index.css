@@ -1,7 +1,9 @@
-::root{
+:root{
     box-sizing: content-box;
     --primary:white;
     --shadow:black;
+    --achetres:#440d5a;
+    --naranja:orange;
 }
 body{
     margin:0;
@@ -32,16 +34,16 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color:white;
+    color:var(--primary);
 }
 .showcase h1{
     font-size: 4rem;
-    color: white;
+    color: var(--primary);
     text-align: center;
 }
 .showcase p{
     font-size: 1.3rem;
-    color:white;
+    color:var(--primary);
     text-align: center;
 }
 .wrapper{
@@ -57,7 +59,7 @@ html{
     justify-content: space-around;
     list-style: none;
     align-items: center;
-    background-color:#000; 
+    background-color:var(--shadow); 
 }
 .links li a{
     color:white;
@@ -91,7 +93,7 @@ blue
 #440d5a
 #fef6f4
     */
-    color:#440d5a;
+    color:var(--achetres);
     text-align: left;
 }
 .box{
@@ -114,9 +116,9 @@ blue
     margin-top:2em;
     width: 100%;
     height: 3.5em;
-    background-color: orange;
+    background-color: var(--naranja);
     border: none;
-    color:white;
+    color:var(--primary);
 }
 .forms{
     display: grid;
@@ -131,7 +133,7 @@ blue
 .form-box-1{
     grid-area: form-box-1;
     min-height: 650px;
-    box-shadow: 13131342;
+    box-shadow: #13131342;
 }   
 
 .form-box-2{
