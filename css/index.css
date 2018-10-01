@@ -117,4 +117,8 @@ blue
     border: none;
     color:white;
 }
-
+.forms{
+    display: grid;
+    grid-template-areas: 'form-box-1 form-box-1 form-box-2'
+                         'form-box-1 form-box-1 form-box-2';    
+}
