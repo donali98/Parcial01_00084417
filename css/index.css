@@ -122,3 +122,17 @@ blue
     grid-template-areas: 'form-box-1 form-box-1 form-box-2'
                          'form-box-1 form-box-1 form-box-2';    
 }
+.form-box-1{
+    grid-area: form-box-1;
+    display:grid;
+    grid-template-areas: 'name-sec name-sec'
+                         'email-sec email-sec'
+                         'comments-sec comments-sec'
+}   
+
+.form-box-2{
+    grid-area: form-box-2;
+}
+input{
+    width: 100%;
+}
