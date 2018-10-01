@@ -1,6 +1,7 @@
 ::root{
     box-sizing: content-box;
     --primary:white;
+    --shadow:black;
 }
 body{
     margin:0;
@@ -120,19 +121,33 @@ blue
 .forms{
     display: grid;
     grid-template-areas: 'form-box-1 form-box-1 form-box-2'
-                         'form-box-1 form-box-1 form-box-2';    
+                         'form-box-1 form-box-1 form-box-2';
+    background: url(../img/contacus.jpg);
+    background-size: cover;
+    background-position: center;
+
+
 }
 .form-box-1{
     grid-area: form-box-1;
-    display:grid;
-    grid-template-areas: 'name-sec name-sec'
-                         'email-sec email-sec'
-                         'comments-sec comments-sec'
+    min-height: 650px;
+    box-shadow: 13131342;
 }   
 
 .form-box-2{
     grid-area: form-box-2;
 }
-input{
+input,textarea {
     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+footer{
+    background-color: var(--shadow);
+    color:white;
+    list-style: none;
 }
